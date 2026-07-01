@@ -137,11 +137,11 @@ document.addEventListener('DOMContentLoaded', () => {
   revealElements.forEach(el => revealObserver.observe(el));
 
   /* ==========================================================
-     CONTACT FORM HANDLING
+     CONTACT FORM HANDLING (Formspree)
      ========================================================== */
   const contactForm = document.getElementById('contactForm');
 
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name = document.getElementById('name').value.trim();
@@ -153,14 +153,35 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Simple email validation
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       alert('Please enter a valid email address.');
       return;
     }
 
-    alert('Thank you for your message! We will get back to you shortly.');
-    contactForm.reset();
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        alert('Thank you! Your message has been sent successfully.');
+        contactForm.reset();
+      } else {
+        alert('Something went wrong. Please try again later.');
+      }
+    } catch {
+      alert('Network error. Please check your connection and try again.');
+    } finally {
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }
   });
 
   /* ==========================================================

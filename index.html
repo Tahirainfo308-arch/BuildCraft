@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildCraft | Premium Construction & Real Estate</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">BuildCraft</a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#project" class="nav-link">Projects</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image: url('img/pic1.jfif');"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        BUILDING YOUR<br />
+        DREAMS INTO<br />
+        REALITY
+      </h1>
+      <p class="hero-text">
+        We provide premium construction, architecture, and property development services
+        with quality, trust, and innovation.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+        <a href="#project" class="btn btn-outline">Our Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="img/pic2.jfif" alt="About BuildCraft Construction Company" loading="lazy" />
+        </div>
+        <div class="about-content reveal">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">About Our Company</h2>
+          <p class="about-description">
+            With over a decade of excellence in the construction industry, BuildCraft has
+            established itself as a premier provider of construction, architecture, and
+            real estate development services. We combine modern innovation with
+            traditional craftsmanship to deliver outstanding results for every project.
+          </p>
+          <p class="about-description">
+            Our team of experienced engineers, architects, and project managers work
+            collaboratively to ensure every project meets the highest standards of quality,
+            safety, and sustainability.
+          </p>
+
+          <div class="counters">
+            <div class="counter-item">
+              <span class="counter-number" data-target="15">0</span><span class="counter-suffix">+</span>
+              <span class="counter-label">Years Experience</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number" data-target="500">0</span><span class="counter-suffix">+</span>
+              <span class="counter-label">Projects</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number" data-target="120">0</span><span class="counter-suffix">+</span>
+              <span class="counter-label">Engineers</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number" data-target="98">0</span><span class="counter-suffix">%</span>
+              <span class="counter-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">
+          Comprehensive construction and real estate solutions tailored to your needs.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3 class="service-title">Residential Construction</h3>
+          <p class="service-text">
+            Custom homes and residential complexes built with premium materials and modern design principles.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3 class="service-title">Commercial Buildings</h3>
+          <p class="service-text">
+            Office towers, retail spaces, and commercial complexes designed for functionality and aesthetics.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-drafting-compass"></i>
+          </div>
+          <h3 class="service-title">Architecture Design</h3>
+          <p class="service-text">
+            Innovative architectural designs that blend creativity with structural integrity and sustainability.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3 class="service-title">Home Renovation</h3>
+          <p class="service-text">
+            Complete home remodeling and renovation services to transform your living spaces.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-city"></i>
+          </div>
+          <h3 class="service-title">Property Development</h3>
+          <p class="service-text">
+            End-to-end property development from land acquisition to final handover and management.
+          </p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-paint-roller"></i>
+          </div>
+          <h3 class="service-title">Interior Finishing</h3>
+          <p class="service-text">
+            Premium interior finishing with meticulous attention to detail and superior craftsmanship.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED PROJECT ==================== -->
+  <section class="project section" id="project">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">Our Latest Project</h2>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-image reveal">
+          <img src="img/pic3.jfif" alt="Skyline Business Tower - BuildCraft Featured Project" loading="lazy" />
+        </div>
+        <div class="project-details reveal">
+          <h3 class="project-title">Skyline Business Tower</h3>
+          <p class="project-description">
+            A landmark commercial development featuring state-of-the-art office spaces,
+            retail outlets, and premium amenities. This 12-story tower represents the
+            pinnacle of modern commercial architecture and sustainable construction practices.
+          </p>
+
+          <div class="project-info">
+            <div class="project-info-item">
+              <span class="project-info-label">Location</span>
+              <span class="project-info-value">Islamabad</span>
+            </div>
+            <div class="project-info-item">
+              <span class="project-info-label">Status</span>
+              <span class="project-info-value status-completed">Completed</span>
+            </div>
+            <div class="project-info-item">
+              <span class="project-info-label">Area</span>
+              <span class="project-info-value">15,000 sq ft</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE US ==================== -->
+  <section class="why-us section" id="why-us">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">What Sets Us Apart</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-image reveal">
+          <img src="img/pic4.jfif" alt="BuildCraft Construction Team and Equipment" loading="lazy" />
+        </div>
+        <div class="why-content reveal">
+          <div class="why-feature">
+            <div class="why-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div>
+              <h4>Expert Engineers</h4>
+              <p>Highly qualified and experienced engineering professionals dedicated to excellence.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div>
+              <h4>Modern Equipment</h4>
+              <p>State-of-the-art machinery and technology for precision and efficiency.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div>
+              <h4>Affordable Pricing</h4>
+              <p>Competitive pricing without compromising on quality or safety standards.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div>
+              <h4>On-Time Delivery</h4>
+              <p>Proven track record of completing projects within the scheduled timeline.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "BuildCraft transformed our vision into reality. Their attention to detail and
+            commitment to quality exceeded our expectations. Highly recommended!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <span>AK</span>
+            </div>
+            <div>
+              <h4>Ahmed Khan</h4>
+              <span>CEO, TechSpace Inc.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Professional, reliable, and exceptional craftsmanship. Our commercial project
+            was delivered on time and within budget. A truly outstanding experience."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <span>SR</span>
+            </div>
+            <div>
+              <h4>Sarah Riaz</h4>
+              <span>Director, Urban Developers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "From design to completion, BuildCraft demonstrated unparalleled expertise.
+            Our home renovation was seamless and the results are stunning."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <span>OM</span>
+            </div>
+            <div>
+              <h4>Omar Malik</h4>
+              <span>Homeowner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone" />
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-image reveal">
+          <img src="img/pic5.jfif" alt="Contact BuildCraft Construction Company" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="contact-info reveal">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h4>Office Address</h4>
+          <p>42 Main Boulevard, Blue Area, Islamabad</p>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h4>Phone</h4>
+          <p>+92 300 1234567</p>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h4>Email</h4>
+          <p>info@buildcraft.com</p>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h4>Working Hours</h4>
+          <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">BuildCraft</a>
+          <p class="footer-text">
+            Premium construction and real estate development services. Building dreams
+            with quality, trust, and innovation since 2010.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Residential Construction</a></li>
+            <li><a href="#services">Commercial Buildings</a></li>
+            <li><a href="#services">Architecture Design</a></li>
+            <li><a href="#services">Home Renovation</a></li>
+            <li><a href="#services">Property Development</a></li>
+            <li><a href="#services">Interior Finishing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</li>
+            <li><i class="fas fa-phone-alt"></i> +92 300 1234567</li>
+            <li><i class="fas fa-envelope"></i> info@buildcraft.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 BuildCraft. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

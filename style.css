@@ -343,6 +343,7 @@ img {
   position: relative;
   z-index: 2;
   max-width: 720px;
+  margin-left: 0;
 }
 
 .hero-title {
